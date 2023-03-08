@@ -35,8 +35,12 @@ a {
 
 #code {
     display: none;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
+}
+
+.title{
+    font-size: 27px;
 }
 
 #clock-box {
@@ -85,3 +89,21 @@ a {
 .space {
     margin-right: 150px;
 }
+
+#myGallery{
+    position:relative;
+    height:300px; /* Set your image height */
+    margin-left: 75px;
+    margin-top: 16px;
+    }
+    #myGallery img{
+    position:absolute;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 1;
+    }
+
+    #myGallery img.active{
+    z-index: 2
+    }
